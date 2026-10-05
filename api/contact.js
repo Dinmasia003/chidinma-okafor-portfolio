@@ -24,9 +24,26 @@ export default async function handler(req, res) {
             })
         });
 
-        const data = await response.json();
+        // Read the response as text first
+        const responseText = await response.text();
+
+        // Try to convert the response to JSON
+        let data;
+
+        try {
+            data = JSON.parse(responseText);
+        } catch (parseError) {
+            console.error("Web3Forms returned a non-JSON response:", responseText);
+
+            return res.status(502).json({
+                success: false,
+                message: "The contact service returned an unexpected response."
+            });
+        }
 
         if (!response.ok || !data.success) {
+            console.error("Web3Forms error:", data);
+
             return res.status(400).json({
                 success: false,
                 message: data.message || "Unable to send your message."
