@@ -1,0 +1,349 @@
+
+@import url(body.css);
+@import url(about.css);
+@import url(hero.css);
+
+/* ============================================
+   DARK THEME
+   ============================================ */
+
+:root {
+
+  /*==================================
+    BRAND COLORS
+  ==================================*/
+
+  --primary: #A855F7;
+  --primary-light: #C084FC;
+  --primary-dark: #7E22CE;
+
+  --secondary: #F4C542;
+  --secondary-light: #FFD86B;
+  --secondary-dark: #D4A91E;
+
+  --accent: #C084FC;
+
+  /*==================================
+    TEXT COLORS
+  ==================================*/
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #D1D5DB;
+  --text-muted: #94A3B8;
+  --text-white: #FFFFFF;
+  --text-gold: #FFD86B;
+  --text-purple: #C084FC;
+
+  /*==================================
+    BACKGROUNDS
+  ==================================*/
+
+  --bg-primary: #070B1A;
+  --bg-secondary: #0C1224;
+  --bg-tertiary: #111827;
+  --bg-card: #151C31;
+  --bg-footer: #050816;
+  --bg-navbar: rgba(7,11,26,.92);
+
+  /*==================================
+    HERO SECTION
+  ==================================*/
+
+  --hero-bg: #070B1A;
+
+  --hero-circle: #2C0D56;
+
+  --hero-glow: rgba(168,85,247,.35);
+
+  /*==================================
+    PROJECT SECTION
+  ==================================*/
+
+  --project-bg: #050816;
+  --project-card: #111827;
+
+  /*==================================
+    BUTTONS
+  ==================================*/
+
+  --btn-primary-bg: #A855F7;
+  --btn-primary-hover: #9333EA;
+  --btn-primary-text: #FFFFFF;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-hover: #C084FC;
+  --btn-secondary-text: #FFFFFF;
+
+  /*==================================
+    BORDERS
+  ==================================*/
+
+  --border: #2D3550;
+  --border-light: #1E293B;
+  --border-purple: rgba(192,132,252,.22);
+
+  /*==================================
+    ICONS
+  ==================================*/
+
+  --icon: #C084FC;
+  --icon-bg: #261442;
+
+  /*==================================
+    SHADOWS
+  ==================================*/
+
+  --shadow-xs: 0 2px 5px rgba(0,0,0,.25);
+
+  --shadow-sm: 0 10px 25px rgba(0,0,0,.35);
+
+  --shadow-md: 0 18px 40px rgba(0,0,0,.45);
+
+  --shadow-lg: 0 30px 70px rgba(0,0,0,.65);
+
+  /*==================================
+    STATUS COLORS
+  ==================================*/
+
+  --success: #22C55E;
+  --warning: #FBBF24;
+  --danger: #F87171;
+
+  /*==================================
+    GRADIENTS
+  ==================================*/
+
+  --gradient-primary:
+      linear-gradient(
+      135deg,
+      #C084FC 0%,
+      #A855F7 50%,
+      #7E22CE 100%);
+
+  --gradient-gold:
+      linear-gradient(
+      135deg,
+      #FFD86B 0%,
+      #F4C542 50%,
+      #D4A91E 100%);
+
+  --gradient-card:
+      linear-gradient(
+      180deg,
+      #151C31 0%,
+      #111827 100%);
+
+  --gradient-footer:
+      linear-gradient(
+      180deg,
+      #050816 0%,
+      #03050E 100%);
+
+  --gradient-project:
+      linear-gradient(
+      180deg,
+      #111827 0%,
+      #050816 100%);
+
+  --gradient-border:
+      linear-gradient(
+      90deg,
+      transparent,
+      rgba(192,132,252,.40),
+      transparent);
+
+  --gradient-glow:
+      radial-gradient(
+      circle,
+      rgba(168,85,247,.35) 0%,
+      rgba(168,85,247,0) 72%);
+
+  --hero-gradient:
+      radial-gradient(circle at 80% 20%,
+      rgba(168,85,247,.28),
+      transparent 35%),
+
+      radial-gradient(circle at 65% 20%,
+      rgba(91,33,182,.22),
+      transparent 45%),
+
+      linear-gradient(
+      180deg,
+      #070B1A 0%,
+      #090C1F 40%,
+      #050816 100%);
+}
+
+
+
+
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+
+.light-theme {
+
+  /*==================================
+    BRAND COLORS
+  ==================================*/
+
+  --primary: #8B5CF6;
+  --primary-light: #A855F7;
+  --primary-dark: #6D28D9;
+
+  --secondary: #F4C542;
+  --secondary-light: #FFD86B;
+  --secondary-dark: #D4A91E;
+
+  --accent: #9333EA;
+
+  /*==================================
+    TEXT COLORS
+  ==================================*/
+
+  --text-primary: #16151D;
+  --text-secondary: #53515F;
+  --text-muted: #8C8899;
+  --text-white: #FFFFFF;
+  --text-gold: #F4C542;
+  --text-purple: #8B5CF6;
+
+  /*==================================
+    BACKGROUNDS
+  ==================================*/
+
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F8FC;
+  --bg-tertiary: #F2F3F8;
+  --bg-card: #FFFFFF;
+  --bg-footer: #220539;
+  --bg-navbar: rgba(255,255,255,.90);
+
+  /*==================================
+    HERO SECTION
+  ==================================*/
+
+  --hero-bg: #FFFFFF;
+
+  --hero-circle: #F3E8FF;
+
+  --hero-glow: rgba(168,85,247,.18);
+
+  /*==================================
+    PROJECT SECTION
+  ==================================*/
+
+  --project-bg: #220539;
+  --project-card: #2D0B4B;
+
+  /*==================================
+    BUTTONS
+  ==================================*/
+
+  --btn-primary-bg: #F4C542;
+  --btn-primary-hover: #EAB308;
+  --btn-primary-text: #ffffff;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-hover: #8B5CF6;
+  --btn-secondary-text: #222222;
+
+  /*==================================
+    BORDERS
+  ==================================*/
+
+  --border: #E8E8EE;
+  --border-light: #F2F2F6;
+  --border-purple: rgba(139,92,246,.18);
+
+  /*==================================
+    ICONS
+  ==================================*/
+
+  --icon: #8B5CF6;
+  --icon-bg: #F6F2FF;
+
+  /*==================================
+    SHADOWS
+  ==================================*/
+
+  --shadow-xs: 0 2px 5px rgba(17,24,39,.04);
+
+  --shadow-sm: 0 8px 20px rgba(17,24,39,.06);
+
+  --shadow-md: 0 15px 35px rgba(17,24,39,.10);
+
+  --shadow-lg: 0 25px 60px rgba(17,24,39,.16);
+
+  /*==================================
+    STATUS COLORS
+  ==================================*/
+
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /*==================================
+    GRADIENTS
+  ==================================*/
+
+  --gradient-primary:
+      linear-gradient(
+      135deg,
+      #A855F7 0%,
+      #8B5CF6 50%,
+      #6D28D9 100%);
+
+  --gradient-gold:
+      linear-gradient(
+      135deg,
+      #FFD86B 0%,
+      #F4C542 50%,
+      #D4A91E 100%);
+
+  --gradient-card:
+      linear-gradient(
+      180deg,
+      #FFFFFF 0%,
+      #FBFBFD 100%);
+
+  --gradient-footer:
+      linear-gradient(
+      180deg,
+      #220539 0%,
+      #18022C 100%);
+
+  --gradient-project:
+      linear-gradient(
+      180deg,
+      #2D0B4B 0%,
+      #220539 100%);
+
+  --gradient-border:
+      linear-gradient(
+      90deg,
+      transparent,
+      rgba(139,92,246,.35),
+      transparent);
+
+  --gradient-glow:
+      radial-gradient(
+      circle,
+      rgba(168,85,247,.20) 0%,
+      rgba(168,85,247,0) 70%);
+
+  --hero-gradient:
+      radial-gradient(circle at 80% 20%,
+      rgba(168,85,247,.15),
+      transparent 38%),
+
+      radial-gradient(circle at 70% 25%,
+      rgba(139,92,246,.08),
+      transparent 45%),
+
+      linear-gradient(
+      180deg,
+      #FFFFFF 0%,
+      #FCFBFF 40%,
+      #F8F8FC 100%);
+}

@@ -1,0 +1,506 @@
+
+.contactpg {
+    width: 100%;
+    padding: 80px 7%;
+
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+
+/* =========================================
+   CONTACT HEADING
+========================================= */
+
+.contactpg > h3 {
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    color: var(--text-primary);
+}
+
+
+/* =========================================
+   CONTACT CONTENT
+========================================= */
+
+.consubpg {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 50px;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contactinfo {
+    width: 50%;
+}
+
+.contactinfo h4 {
+    margin-bottom: 15px;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    color: var(--text-primary);
+}
+
+.contactinfo > p {
+    max-width: 500px;
+
+    color: var(--text-secondary);
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CONTACT ICON CONTAINER
+========================================= */
+
+.conicon {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   CONTACT ICON CIRCLE
+========================================= */
+
+.conicon > p {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    background: var(--bg-card);
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   CONTACT LINKS
+========================================= */
+
+.conicon a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-gold);
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   ICON HOVER
+========================================= */
+
+.conicon > p:hover {
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    transform: translateY(-4px);
+}
+
+.conicon > p:hover a {
+    color: var(--text-white);
+}
+
+
+/* =========================================
+   SVG ICON
+========================================= */
+
+.conicon svg {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* =========================================
+   WHATSAPP ICON
+========================================= */
+
+.conicon .fa-whatsapp {
+    font-size: 22px;
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contactform {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* =========================================
+   FORM ROWS
+========================================= */
+
+.form-one,
+.form-two {
+    width: 100%;
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.contactform input,
+.contactform textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: var(--bg-secondary);
+
+    color: var(--text-primary);
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   INPUT HEIGHT
+========================================= */
+
+.contactform input {
+    height: 50px;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.contactform textarea {
+    min-height: 160px;
+
+    resize: vertical;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.contactform input::placeholder,
+.contactform textarea::placeholder {
+    color: var(--text-muted);
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+.contactform input:focus,
+.contactform textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.12);
+}
+
+
+/* =========================================
+   FORM MESSAGE
+========================================= */
+
+.form-message {
+    min-height: 20px;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+}
+
+
+/* SUCCESS MESSAGE */
+
+.form-message.success {
+    color: #22c55e;
+}
+
+
+/* ERROR MESSAGE */
+
+.form-message.error {
+    color: #ef4444;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.contactform button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: var(--gradient-primary);
+
+    color: var(--text-white);
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.contactform button:hover {
+    transform: translateY(-2px);
+
+   box-shadow: var(--shadow-sm);
+}
+
+
+/* =========================================
+   BUTTON ACTIVE
+========================================= */
+
+.contactform button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   DISABLED BUTTON
+========================================= */
+
+.contactform button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contactpg {
+        padding: 70px 5%;
+    }
+
+    .consubpg {
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET / SMALL SCREEN
+========================================= */
+
+@media (max-width: 800px) {
+
+    .consubpg {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .contactinfo,
+    .contactform {
+        width: 100%;
+    }
+
+    .contactinfo {
+        text-align: center;
+    }
+
+    .contactinfo > p {
+        margin: 0 auto;
+    }
+
+    .conicon {
+        justify-content: center;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .contactpg {
+        padding: 60px 5%;
+    }
+
+
+    /* Heading */
+
+    .contactpg > h3 {
+        margin-bottom: 35px;
+
+        font-size: 2rem;
+    }
+
+
+    /* Contact info */
+
+    .contactinfo h4 {
+        font-size: 1.5rem;
+    }
+
+    .contactinfo > p {
+        font-size: 0.9rem;
+    }
+
+
+    /* Form */
+
+    .contactform {
+        padding: 20px;
+
+        border-radius: 12px;
+    }
+
+
+    /* Form rows */
+
+    .form-one,
+    .form-two {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    /* Inputs */
+
+    .contactform input {
+        height: 50px;
+    }
+
+
+    /* Textarea */
+
+    .contactform textarea {
+        min-height: 140px;
+    }
+
+
+    /* Icons */
+
+    .conicon {
+        gap: 12px;
+    }
+
+    .conicon > p {
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .contactpg {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .contactform {
+        padding: 18px;
+    }
+
+    .contactpg > h3 {
+        font-size: 1.8rem;
+    }
+
+}
+

@@ -1,0 +1,375 @@
+@import url(colors.css);
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.abtsc {
+    width: 100%;
+    padding: 80px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+
+/* =========================================
+   ABOUT TEXT
+========================================= */
+
+.abttxt {
+    width: 55%;
+    position: relative;
+}
+
+
+.abttxt h2 {
+    margin-bottom: 20px;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    color: var(--text-primary);
+}
+
+
+.abttxt p {
+    max-width: 650px;
+
+    margin-bottom: 30px;
+
+    color: var(--text-secondary);
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   ABOUT BUTTON
+========================================= */
+
+.abtbtn {
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--gradient-primary);
+
+    color: var(--text-white);
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.abtbtn:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.abtbtn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   ABOUT DECORATIVE ELEMENTS
+========================================= */
+
+.abttxt > i {
+    position: absolute;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--secondary);
+
+    opacity: 0.8;
+}
+
+
+.abttxt > i:nth-of-type(1) {
+    top: 5px;
+    left: -25px;
+}
+
+
+.abttxt > i:nth-of-type(2) {
+    top: 25px;
+    left: -40px;
+
+    width: 5px;
+    height: 5px;
+
+    background: var(--primary);
+}
+
+
+.abttxt > i:nth-of-type(3) {
+    bottom: 15px;
+    right: 10%;
+
+    width: 6px;
+    height: 6px;
+
+    background: var(--accent);
+}
+
+
+/* =========================================
+   ABOUT IMAGE
+========================================= */
+
+.abtimg {
+    width: 45%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.abtimg img {
+    width: 100%;
+    max-width: 480px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: all 0.3s ease;
+}
+
+
+.abtimg img:hover {
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .abtsc {
+        padding: 70px 5%;
+
+        gap: 45px;
+    }
+
+
+    .abttxt {
+        width: 52%;
+    }
+
+
+    .abtimg {
+        width: 48%;
+    }
+
+
+    .abttxt h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+
+/* =========================================
+   TABLET / SMALL SCREEN
+========================================= */
+
+@media (max-width: 800px) {
+
+    .abtsc {
+        flex-direction: column;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+
+    .abttxt,
+    .abtimg {
+        width: 100%;
+    }
+
+
+    .abttxt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .abttxt p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .abtimg img {
+        max-width: 500px;
+    }
+
+
+    /* Decorative dots */
+
+    .abttxt > i:nth-of-type(1) {
+        left: 15%;
+    }
+
+
+    .abttxt > i:nth-of-type(2) {
+        left: 12%;
+    }
+
+
+    .abttxt > i:nth-of-type(3) {
+        right: 15%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .abtsc {
+        padding: 60px 5%;
+
+        gap: 40px;
+    }
+
+
+    /* Heading */
+
+    .abttxt h2 {
+        margin-bottom: 15px;
+
+        font-size: 2rem;
+    }
+
+
+    /* Paragraph */
+
+    .abttxt p {
+        margin-bottom: 25px;
+
+        font-size: 0.9rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* Button */
+
+    .abtbtn {
+        padding: 12px 25px;
+
+        font-size: 0.95rem;
+    }
+
+
+    /* Image */
+
+    .abtimg img {
+        max-width: 100%;
+
+        border-radius: 15px;
+    }
+
+
+    /* Decorative dots */
+
+    .abttxt > i:nth-of-type(1) {
+        left: 8%;
+        top: 0;
+    }
+
+
+    .abttxt > i:nth-of-type(2) {
+        left: 5%;
+        top: 25px;
+    }
+
+
+    .abttxt > i:nth-of-type(3) {
+        right: 8%;
+        bottom: 10px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .abtsc {
+        padding-left: 4%;
+        padding-right: 4%;
+
+        gap: 35px;
+    }
+
+
+    .abttxt h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .abttxt p {
+        font-size: 0.88rem;
+    }
+
+
+    .abtbtn {
+        padding: 11px 22px;
+
+        font-size: 0.9rem;
+    }
+
+
+    .abtimg img {
+        border-radius: 12px;
+    }
+
+}

@@ -1,0 +1,574 @@
+@import url(colors.css);
+
+/* =========================================
+HERO SECTION
+========================================= */
+
+.hero {
+
+position: relative;
+width: 100%;
+min-height: calc(100vh - 80px);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 90px 7%;
+background: var(--bg-primary);
+color: var(--text-primary);
+overflow: hidden;
+}
+
+/* =========================================
+BACKGROUND GLOWS
+========================================= */
+
+.hero-bg-glow {
+position: absolute;
+width: 420px;
+height: 420px;
+border-radius: 50%;
+pointer-events: none;
+filter: blur(80px);
+opacity: 0.12;
+}
+
+.glow-one {
+top: 5%;
+left: 10%;
+background: var(--primary);
+
+}
+
+.glow-two {
+right: 8%;
+bottom: 5%;
+background: var(--secondary);
+
+}
+
+/* =========================================
+HERO CONTAINER
+========================================= */
+
+.hero-container {
+position: relative;
+z-index: 2;
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+
+}
+
+/* =========================================
+HERO CONTENT
+========================================= */
+
+.hero-content {
+width: 100%;
+max-width: 850px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+/* =========================================
+GREETING
+========================================= */
+
+.hero-greeting {
+margin-bottom: 15px;
+color: var(--text-gold);
+font-size: 1.05rem;
+font-weight: 600;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+/* =========================================
+NAME
+========================================= */
+
+.hero-content h1 {
+margin-bottom: 18px;
+font-size: clamp(3.5rem, 8vw, 5rem);
+/* line-height: 1; */
+font-weight: 80;
+letter-spacing: -2px;
+color: var(--text-primary);
+}
+
+.hero-content h1 span {
+color: var(--primary);
+
+}
+
+/* =========================================
+PROFESSION
+========================================= */
+
+.hero-content h2 {
+margin-bottom: 25px;
+font-size: clamp(1.35rem, 2.5vw, 2rem);
+font-weight: 600;
+color: var(--text-secondary);
+
+}
+
+.hero-content h2 span {
+color: var(--secondary);
+margin: 0 5px;
+
+}
+
+/* =========================================
+DESCRIPTION
+========================================= */
+
+.hero-description {
+max-width: 700px;
+
+margin: 0 auto 35px;
+
+color: var(--text-secondary);
+
+font-size: 1rem;
+
+line-height: 1.8;
+
+}
+
+/* =========================================
+HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+display: flex;
+
+align-items: center;
+justify-content: center;
+gap: 15px;
+margin-bottom: 30px;
+
+}
+
+.hero-btn {
+display: inline-flex;
+
+align-items: center;
+justify-content: center;
+
+gap: 10px;
+
+min-width: 155px;
+
+padding: 14px 25px;
+
+border-radius: 8px;
+
+text-decoration: none;
+
+font-size: 0.95rem;
+
+font-weight: 600;
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+/* PRIMARY BUTTON */
+
+.primary-btn {
+background: var(--gradient-primary);
+color: var(--btn-primary-text);
+box-shadow: var(--shadow-sm);
+
+}
+
+.primary-btn:hover {
+transform: translateY(-4px);
+box-shadow: var(--shadow-md);
+
+}
+
+.primary-btn i {
+font-size: 0.8rem;
+transition: transform 0.3s ease;
+
+}
+
+.primary-btn:hover i {
+transform: translateX(4px);
+
+
+}
+
+/* SECONDARY BUTTON */
+
+.secondary-btn {
+
+background: transparent;
+
+color: var(--text-primary);
+
+border: 1px solid var(--border);
+
+}
+
+.secondary-btn:hover {
+background: var(--bg-card);
+
+color: var(--primary);
+
+border-color: var(--primary);
+
+transform: translateY(-4px);
+
+
+}
+
+/* =========================================
+SOCIAL LINKS
+========================================= */
+
+.hero-socials {
+
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+gap: 12px;
+
+margin-bottom: 30px;
+
+}
+
+.hero-socials a {
+
+width: 40px;
+height: 40px;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+border: 1px solid var(--border);
+
+border-radius: 50%;
+
+color: var(--text-secondary);
+
+text-decoration: none;
+
+transition: all 0.3s ease;
+
+}
+
+.hero-socials a:hover {
+color: var(--text-white);
+
+background: var(--primary);
+
+border-color: var(--primary);
+
+transform: translateY(-4px);
+
+}
+
+/* =========================================
+TECHNOLOGY LABELS
+========================================= */
+
+.hero-tech {
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+gap: 15px;
+
+color: var(--text-muted);
+
+font-size: 0.8rem;
+
+}
+
+.hero-tech span {
+
+
+display: flex;
+
+align-items: center;
+
+gap: 7px;
+
+}
+
+.hero-tech i {
+
+color: var(--secondary);
+
+font-size: 0.75rem;
+
+
+}
+
+.tech-divider {
+
+
+width: 4px;
+height: 4px;
+
+border-radius: 50%;
+
+background: var(--border);
+
+
+}
+
+/* =========================================
+SCROLL INDICATOR
+========================================= */
+
+.scroll-indicator {
+
+
+position: absolute;
+
+bottom: 25px;
+left: 50%;
+
+transform: translateX(-50%);
+
+display: flex;
+
+align-items: center;
+
+gap: 8px;
+
+color: var(--text-muted);
+
+text-decoration: none;
+
+font-size: 0.75rem;
+
+transition: color 0.3s ease;
+
+
+}
+
+.scroll-indicator:hover {
+
+
+color: var(--primary);
+
+
+}
+
+.scroll-indicator i {
+
+font-size: 0.75rem;
+
+animation: scrollArrow 1.5s ease-in-out infinite;
+
+}
+
+@keyframes scrollArrow {
+
+
+0%,
+100% {
+
+    transform: translateY(0);
+
+}
+
+50% {
+
+    transform: translateY(5px);
+
+}
+
+
+}
+
+/* =========================================
+TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+.hero {
+
+    min-height: auto;
+
+    padding: 90px 5% 100px;
+
+}
+
+
+.hero-content h1 {
+
+    font-size: clamp(3rem, 10vw, 5rem);
+
+}
+
+
+.hero-description {
+
+    max-width: 650px;
+
+}
+
+
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+
+.hero {
+
+    padding: 65px 5% 90px;
+
+}
+
+
+.hero-greeting {
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.hero-content h1 {
+
+    margin-bottom: 15px;
+
+    font-size: 2.8rem;
+
+    letter-spacing: -1px;
+
+}
+
+
+.hero-content h2 {
+
+    margin-bottom: 20px;
+
+    font-size: 1.2rem;
+
+    line-height: 1.5;
+
+}
+
+
+.hero-description {
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero-buttons {
+
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.hero-btn {
+
+    width: 100%;
+
+    max-width: 280px;
+
+}
+
+
+.hero-socials {
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-tech {
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.tech-divider {
+
+    display: none;
+
+}
+
+
+.scroll-indicator {
+
+    display: none;
+
+}
+
+
+}
+
+/* =========================================
+VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+.hero-content h1 {
+
+    font-size: 2.4rem;
+
+}
+
+
+.hero-content h2 {
+
+    font-size: 1.05rem;
+
+}
+
+
+.hero-description {
+
+    font-size: 0.88rem;
+
+}
+
+
+}
+
