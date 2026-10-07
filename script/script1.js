@@ -105,27 +105,20 @@ if (contactForm) {
         formMessage.textContent = '';
 
 
-        const formData = {
-            first_name: document.getElementById('first-name').value.trim(),
-            last_name: document.getElementById('last-name').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            phone: document.getElementById('phone').value.trim(),
-            message: document.getElementById('message').value.trim()
-        };
-
-
         try {
 
-            const response = await fetch('/api/contact', {
+            // Collect the form data, including the Web3Forms access key
+            const formData = new FormData(contactForm);
+
+            const response = await fetch('https://api.web3forms.com/submit', {
 
                 method: 'POST',
 
                 headers: {
-                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
 
-                body: JSON.stringify(formData)
+                body: formData
 
             });
 
@@ -133,7 +126,7 @@ if (contactForm) {
             const data = await response.json();
 
 
-            console.log('Server response:', data);
+            console.log('Web3Forms response:', data);
 
 
             if (response.ok && data.success) {
@@ -147,11 +140,10 @@ if (contactForm) {
 
                 formMessage.textContent =
                     data.message ||
-                    `Request failed (${response.status}).`;
+                    'Unable to send your message. Please try again.';
 
                 console.error(
-                    'Contact form failed:',
-                    response.status,
+                    'Web3Forms error:',
                     data
                 );
 
@@ -166,7 +158,7 @@ if (contactForm) {
             );
 
             formMessage.textContent =
-                'Unable to connect to the contact server.';
+                'Something went wrong. Please try again later.';
 
         }
 
